@@ -11,3 +11,29 @@
     background-color: bisque;
     border: 1px solid black;
 }
+
+.box_card_small{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_small{
+    margin: 3px;
+    width: calc(100% / 3 - 6px);
+    border: 1px solid black;
+}
+
+.card_small_img{
+    border: 1px solid black;
+}
+
+.card_big{
+    border: 1px solid black;
+}
+@media all and (min-width:768px) {
+    .card_small{
+        width: calc(100% / 5 - 6px);
+    }
+}
+
+
