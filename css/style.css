@@ -1,0 +1,13 @@
+.ms_menu{
+    position: absolute;
+    width: 100%;
+}
+
+.mt_img{
+    margin-top: 200px;
+}
+
+.small_img{
+    background-color: bisque;
+    border: 1px solid black;
+}
