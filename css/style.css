@@ -1,4 +1,8 @@
-
+:root{
+    --grey: #bebcbb;
+    --blue: #161c3b;
+    --light-blue: #00439c;
+}
 .ms_menu{
     position: absolute;
     width: 100%;
@@ -33,6 +37,33 @@
 .card_small:hover{
     opacity: 1;
 }
+/* .........Settima sezione..... */
+.ms_seventh_section{
+    background-color: #bebcbb;
+}
+
+/* ......Nona sezione...... */
+.ms_ninth_section{
+    background-color: #161c3b;
+}
+
+/* ........FOOTER......... */
+footer{
+    background-color: #00439c;
+}
+
+.logo_footer{
+    width: 1rem;
+}
+
+.globe_footer{
+    display: flex;
+    align-items: center;
+}
+.text_footer{
+    font-size: 10px;
+}
+/* ............................. */
 
 @media all and (min-width:768px) {
     .card_small{
