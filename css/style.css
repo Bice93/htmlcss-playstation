@@ -1,17 +1,24 @@
+
 .ms_menu{
     position: absolute;
     width: 100%;
 }
-
-.mt_img{
-    margin-top: 200px;
+/* ..........Prima Sezione........ */
+.ms_jumbotron{
+    margin-top: 80px;
+    height: calc(80vh - 80px);
 }
 
-.small_img{
-    background-color: bisque;
-    border: 1px solid black;
+.box_text{
+    height: calc(80vh - 80px);
+    position: relative;
 }
-
+.box_text_jumbo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* ........Terza sezione...... */
 .box_card_small{
     display: flex;
     flex-wrap: wrap;
@@ -20,16 +27,13 @@
 .card_small{
     margin: 3px;
     width: calc(100% / 3 - 6px);
-    border: 1px solid black;
+    opacity: 0.5;
 }
 
-.card_small_img{
-    border: 1px solid black;
+.card_small:hover{
+    opacity: 1;
 }
 
-.card_big{
-    border: 1px solid black;
-}
 @media all and (min-width:768px) {
     .card_small{
         width: calc(100% / 5 - 6px);
