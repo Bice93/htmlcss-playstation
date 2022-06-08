@@ -3,18 +3,63 @@
     --blue: #161c3b;
     --light-blue: #00439c;
 }
-.ms_menu{
-    position: absolute;
-    width: 100%;
+
+.cont_logo{
+    height: 30px;
 }
+
+.logo_sony{
+    width: 100px;
+}
+
+/* .......navbar....... */
+.ms_navbar{
+    background-color: white;
+}
+
+.ms_list{
+    position: static;
+}
+
+.ms_menudrop{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.image_drop{
+    width: 50px;
+}
+
+.item_list{
+    display: inline-block;
+}
+
+.list_nav_casc{
+    list-style-type: disc;
+    color: blue;
+    display: flex;
+    justify-content: center;
+}
+.list_link{
+    text-decoration: none;
+    color: black;
+}
+
+.item_list:hover .bg_ms{
+    background-color: white;
+    border: 2px solid lightgrey;
+    box-shadow: 2px 2px 3px lightgray;
+}
+
 /* ..........Prima Sezione........ */
 .ms_jumbotron{
-    margin-top: 80px;
-    height: calc(80vh - 80px);
+    margin-top: 106px;
+    height: calc(80vh - 30px - 76px);
 }
 
 .box_text{
-    height: calc(80vh - 80px);
+    height: calc(80vh - 30px - 76px);
     position: relative;
 }
 .box_text_jumbo{
@@ -36,6 +81,7 @@
 
 .card_small:hover{
     opacity: 1;
+    border-bottom: 2px solid blue;
 }
 /* .........Settima sezione..... */
 .ms_seventh_section{
@@ -63,12 +109,127 @@ footer{
 .text_footer{
     font-size: 10px;
 }
+
+.img_jumbo{
+    width: 150px;
+}
+
+.rap_tab{
+    font-size: 20px;
+}
 /* ............................. */
 
 @media all and (min-width:768px) {
     .card_small{
         width: calc(100% / 5 - 6px);
     }
+    .img_jumbo{
+        width: 200px;
+    }
 }
 
+/* --------EFFETTI------- */
+.small_img:active{
+    border: 2px solid blue;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
 
+.small_img{
+    transition: 0.2s;
+}
+.small_img:hover{
+    transform: translate(0, -10px);
+}
+/* effetto bottoni bordo nero */
+.btn_special{
+   position: relative;
+   z-index: 1;
+}
+.btn_special:after {
+    position: absolute;
+    content: "";
+    top:50%;
+    left: 50%;
+    width: 98%;
+    height: 95%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.1s ease;
+  }
+  .btn_special:hover:after {
+    opacity: 1;
+  }
+/* effetto bottone navbar */
+  .btn_nav{
+    position: relative;
+    z-index: 1; 
+  }
+  .btn_nav:after {
+    position: absolute;
+    content: "";
+    top:50%;
+    left: 50%;
+    width: 95%;
+    height: 95%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.1s ease;
+  }
+  .btn_nav:hover:after {
+    opacity: 1;
+  }
+  /* effetto bottoni bordo bianco/nero */
+  .second_btn_special{
+    position: relative;
+    z-index: 1; 
+  }
+  .second_btn_special:after {
+    position: absolute;
+    content: "";
+    top:50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.1s ease;
+  }
+  .second_btn_special:hover:after {
+    opacity: 1;
+  }
+  .second_btn_special:hover{
+      border: 2px solid black;
+  }
+/* effetto bottone chiaro */
+  .btn_light{
+    position: relative;
+    z-index: 1; 
+  }
+  .btn_light:after {
+    position: absolute;
+    content: "";
+    top:50%;
+    left: 50%;
+    width: 103%;
+    height: 110%;
+    transform: translate(-50%, -50%);
+    border: 3px solid lightgrey;
+    border-radius: 20px;
+    opacity:0;
+    transition: all 0.1s ease;
+  }
+  .btn_light:hover:after {
+    opacity: 1;
+  }
+
+
+
+  
